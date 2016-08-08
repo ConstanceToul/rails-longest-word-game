@@ -1,0 +1,12 @@
+<h3>Hey ! Here is your grid :  </h3>
+<p> <%= @grid %> </p>
+
+
+<form action="/score">
+  <label for="question">What is your word ?</label>
+  <input type="text" id="question" name="word" placeholder="extraordinary">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="hidden" name="starttime" value="<%= @start_time %>">
+  <input type="submit" value="Check answer !"  >
+</form>
+
